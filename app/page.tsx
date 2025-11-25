@@ -2,7 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div><h1>jakriafk</h1></div>
+    <section>
+      <h1 className='text-center'>jakaria</h1>
+    </section>
 
   )
 }
