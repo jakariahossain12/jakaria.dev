@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Schibsted_Grotesk, Martian_Mono } from "next/font/google";
 import "./globals.css";
 import LightRays from "@/components/LightRays";
+import Nevbar from "@/components/Nevbar";
+
 
 
 const SchibstedGrotesk = Schibsted_Grotesk({
@@ -27,8 +29,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${SchibstedGrotesk.variable} ${martianMono.variable} bg-foreground min-h-screen antialiased`}
+        className={`${SchibstedGrotesk.variable} ${martianMono.variable} bg-background min-h-screen antialiased`}
       >
+        
+        
+        <Nevbar/>
+
 
 <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
   <LightRays
@@ -44,6 +50,9 @@ export default function RootLayout({
     
   />
 </div>
+
+      
+      
 
         <main>
           {children}
