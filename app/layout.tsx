@@ -29,14 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${SchibstedGrotesk.variable} ${martianMono.variable} bg-background min-h-screen antialiased`}
+        className={`${SchibstedGrotesk.variable} ${martianMono.variable} bg-background h-fit antialiased`}
       >
         
         
         <Nevbar/>
 
 
-<div className="absolute inset-0 top-0 z-[-1] min-h-screen">
+<div className="fixed inset-0 top-0 z-[-1] ">
   <LightRays
     raysOrigin="top-center"
     raysColor="#5dfeca"
