@@ -90,6 +90,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @utility flex-center {
   @apply flex items-center justify-center;
 }
@@ -147,25 +151,25 @@
     }
   }
 
-  header {
-    @apply glass sticky top-0 z-50;
+header {
+  @apply glass sticky top-0 z-50;
 
-    nav {
-      @apply flex flex-row justify-between mx-auto container sm:px-10 px-5 py-4;
-    }
+  nav {
+    @apply flex flex-row justify-between items-center mx-auto container sm:px-10 px-5 py-4;
+  }
 
-    .logo {
-      @apply flex flex-row items-center gap-2;
+  .logo {
+    @apply flex flex-row items-center gap-2;
 
-      p {
-        @apply text-xl font-bold italic max-sm:hidden;
-      }
-    }
-
-    ul {
-      @apply flex flex-row items-center gap-6;
+    p {
+      @apply text-xl font-bold italic;
     }
   }
+
+  ul {
+    @apply flex flex-row items-center gap-6;
+  }
+}
 
   .events {
     @apply grid md:grid-cols-3 gap-10 sm:grid-cols-2 grid-cols-1;

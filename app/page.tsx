@@ -1,9 +1,10 @@
-import React from 'react'
-
+import Hero from "@/components/Hero"
 const page = () => {
   return (
     <section>
-      <h1 className='text-center'>jakaria</h1>
+      
+      <Hero/>
+      
     </section>
 
   )
