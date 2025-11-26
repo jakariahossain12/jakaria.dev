@@ -1,12 +1,10 @@
-"use client";
-import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import GooeyNav from "@/components/GooeyNav";
-import { FaBars, FaTimes } from "react-icons/fa";
-
+import MobileMenu from "./MobileNev";
 const Nevbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  
 
   const items = [
     { label: "Home", href: "#home" },
@@ -39,33 +37,9 @@ const Nevbar = () => {
           />
         </div>
 
-        {/* Mobile Hamburger */}
-        <button
-          className="md:hidden text-xl"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <FaTimes /> : <FaBars />}
-        </button>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="absolute top-16 left-0 w-full bg-black/80 backdrop-blur-md md:hidden">
-            <ul className="flex flex-col items-center gap-6 py-6">
-              {items.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-white text-lg font-semibold"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+       <MobileMenu items={items}/>
       </nav>
+      
     </header>
   );
 };
