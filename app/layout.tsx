@@ -3,6 +3,7 @@ import { Schibsted_Grotesk, Martian_Mono } from "next/font/google";
 import "./globals.css";
 import LightRays from "@/components/LightRays";
 import Nevbar from "@/components/Nevbar";
+import Footer from "@/components/Footer";
 
 
 
@@ -57,6 +58,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );
