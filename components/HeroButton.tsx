@@ -16,7 +16,7 @@ const HeroButton = () => {
   return (
     <>
  <button
-                  onClick={() => scrollToSection("projects")}
+                  onClick={() => scrollToSection("project")}
                   className="px-6 py-3 bg-[#16f1b1] hover:bg-[#00b280] rounded-lg font-medium transition duration-300"
                 >
                   View My Work
