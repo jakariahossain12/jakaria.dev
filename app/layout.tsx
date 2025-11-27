@@ -34,7 +34,7 @@ export default function RootLayout({
       >
         
         
-        <Nevbar/>
+        
 
 
 <div className="fixed inset-0 top-0 z-[-1] ">
@@ -58,7 +58,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        <Footer/>
+        
       </body>
     </html>
   );
