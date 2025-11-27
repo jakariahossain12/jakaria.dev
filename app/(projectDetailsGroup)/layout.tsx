@@ -1,3 +1,4 @@
+import DetailsNev from '@/components/DetaliesNev';
 import React from 'react'
 
 export default function layout({
@@ -6,6 +7,11 @@ export default function layout({
   children: React.ReactNode;
 }>) {
   return (
-    <section>{children}</section>
+    <section>
+      <DetailsNev/>
+      
+        {children}
+      
+      </section>
   )
 }
