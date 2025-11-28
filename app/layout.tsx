@@ -3,6 +3,7 @@ import { Schibsted_Grotesk, Martian_Mono } from "next/font/google";
 import "./globals.css";
 import LightRays from "@/components/LightRays";
 import Nevbar from "@/components/Nevbar";
+import Footer from "@/components/Footer";
 
 
 
@@ -33,7 +34,7 @@ export default function RootLayout({
       >
         
         
-        <Nevbar/>
+        
 
 
 <div className="fixed inset-0 top-0 z-[-1] ">
@@ -57,6 +58,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        
       </body>
     </html>
   );
