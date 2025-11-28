@@ -1,6 +1,7 @@
 import Image from "next/image"
-import TextType from "@/components/TextType"
+
 import HeroButton from "./HeroButton"
+import TextTypeWrapper from "./TextTypeWrapper"
 
 const Hero = () => {
   return (
@@ -15,13 +16,7 @@ const Hero = () => {
                 Hi, I'm <span className="">Md Jakaria</span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-300">
-                      <TextType 
-                      text={["Full Stack Web Developer!"]}
-                      typingSpeed={75}
-                      pauseDuration={1500}
-                      showCursor={true}
-                      cursorCharacter="|"
-                      />
+                     <TextTypeWrapper/>
               </h2>
 
               <p className="text-lg mb-8 text-gray-300">

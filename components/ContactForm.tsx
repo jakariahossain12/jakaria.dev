@@ -5,9 +5,13 @@ import toast, { Toaster } from "react-hot-toast";
 import emailjs from "emailjs-com";
 
 export const ContactForm = () => {
-      const form = useRef();
-  const sendEmail = (e) => {
+      const form = useRef<HTMLFormElement>(null);
+
+   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!form.current) return;
+
 
     emailjs
       .sendForm(
@@ -68,7 +72,7 @@ export const ContactForm = () => {
                   <textarea
                     id="message"
                     name="message"
-                    rows="5"
+                    rows={5}
                     className="w-full px-4 py-2 bg-[#00b280] border border-[#007055] rounded-md focus:outline-none focus:ring-2 focus:ring-[#007055]"
                     required
                   ></textarea>

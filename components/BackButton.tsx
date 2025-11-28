@@ -8,7 +8,7 @@ const BackButton = () => {
                 onClick={() => router.back()}
                 className="flex items-center text-[#5dfeca]  hover:text-[#008e6a]"
               >
-                <FaArrowLeft className="mr-2" />
+                <FaArrowLeft className="" />
                 Back to Portfolio
               </button>
   )
