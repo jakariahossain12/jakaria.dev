@@ -5,11 +5,10 @@ const HeroButton = () => {
     
 
 
-     const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: "smooth" });
-    
-  };
+   const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  element?.scrollIntoView({ behavior: "smooth" });
+};
 
 
 
