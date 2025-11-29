@@ -14,6 +14,7 @@ interface Project {
   GalleryImg?: string[];
   liveLink?: string;
   githubLink?: string;
+  server?: string;
   challenges?: string;
   futurePlans?: string;
 }
@@ -122,7 +123,7 @@ const ProjectDetails = () => {
           <div className="md:col-span-4 space-y-6">
             {/* Quick Links */}
             <div className=" p-6 rounded-xl shadow-lg    sticky top-20">
-              <h2 className="text-xl font-bold  mb-4">
+              <h2 className="text-xl font-bold text-[#00d99c]  mb-4">
                 Project Links
               </h2>
               <div className="space-y-3">
@@ -144,10 +145,22 @@ const ProjectDetails = () => {
                     rel="noopener"
                     className="flex items-center justify-between p-3  rounded-lg hover:bg-[#00d99c]  transition-colors"
                   >
-                    <span className="font-medium">Source Code</span>
+                    <span className="font-medium">Source Code Client</span>
                     <FaGithub className="text-[#007055]" />
                   </a>
                 )}
+                {project?.server && (
+                  <a
+                    href={project?.server}
+                    target="_blank"
+                    rel="noopener"
+                    className="flex items-center justify-between p-3  rounded-lg hover:bg-[#00d99c]  transition-colors"
+                  >
+                    <span className="font-medium">Source Code Server</span>
+                    <FaGithub className="text-[#007055]" />
+                  </a>
+                )}
+
               </div>
             </div>
 
