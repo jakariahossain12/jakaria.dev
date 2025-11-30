@@ -18,8 +18,8 @@ const martianMono = Martian_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dev event",
-  description: "every dev event ",
+  title: "MD Jakaria",
+  description: "jakaria.dev ",
 };
 
 export default function RootLayout({

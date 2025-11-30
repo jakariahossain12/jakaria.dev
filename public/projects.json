@@ -7,6 +7,7 @@
     "description": "A full-stack role-based food donation platform that connects restaurants, charities, and users to reduce food waste. Includes secure Firebase authentication, admin verification, and real-time food sharing functionalities.",
     "liveLink": "https://deft-stroopwafel-641c61.netlify.app/",
     "githubLink": "https://github.com/jakariahossain12/food-donation-client-site",
+    "server": "https://github.com/jakariahossain12/food-donation-server-site",
     "challenges": "Implementing role-based authentication, handling image uploads, and managing real-time donation requests.",
     "futurePlans": "Add a mobile app, integrate SMS notifications, and implement AI-based donation recommendations.",
     "technologies": [
@@ -28,6 +29,7 @@
     "description": "A knowledge-sharing platform where users can create, edit, and delete their own articles, as well as like and comment on others’ posts. Data is securely stored in MongoDB, with Firebase Authentication and JWT for secure user sessions.",
     "liveLink": "https://chipper-conkies-13f147.netlify.app/",
     "githubLink": "https://github.com/jakariahossain12/KnowSync-client-side",
+    "server": "https://github.com/jakariahossain12/KnowSync-server-side",
     "challenges": "Implementing real-time updates, ensuring secure JWT authentication, and integrating Firebase authentication with MongoDB backend.",
     "futurePlans": "Add AI-powered article recommendations, implement advanced search & filtering, and support multimedia content in articles.",
     "technologies": [
@@ -55,6 +57,7 @@
     "description": "A platform that helps users easily find a roommate or post an available room/apartment. Users can sign up, complete their profile, post listings for free, and search for rooms based on location and preferences. Includes direct contact with room owners.",
     "liveLink": "https://superb-bunny-88f76c.netlify.app/",
     "githubLink": "https://github.com/jakariahossain12/FindMyRoomMate-Interface",
+    "server": "https://github.com/jakariahossain12/FindMyRoomMate-Server-side",
     "challenges": "Implementing a search feature with multiple filters, ensuring responsive design for all devices, and integrating profile-based posting and browsing.",
     "futurePlans": "Add real-time chat between users, advanced filtering (budget, amenities), and location-based map integration.",
     "technologies": [

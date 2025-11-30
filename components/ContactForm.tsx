@@ -79,7 +79,7 @@ export const ContactForm = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-[#5dfeca] hover:bg-[#00b280] rounded-lg font-medium transition duration-300"
+                  className="w-full cursor-pointer px-6 py-3 bg-[#00b280] hover:bg-[#00b280] rounded-lg font-medium transition duration-300"
                 >
                   Send Message
                 </button>
